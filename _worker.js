@@ -1019,7 +1019,6 @@ export default {
 		//去重去除空元素
 		临时proxyIPs = [...new Set(临时proxyIPs.filter(item => item && item.trim() !== ''))];
 		if (临时proxyIPs.length > 0) proxyIPs = 临时proxyIPs;
-		//console.log(proxyIPs);
 
 		if (快速订阅访问入口.length > 0 && 快速订阅访问入口.some(token => url.pathname === `/${token}`)) {
 			host = "null";
@@ -1245,7 +1244,6 @@ export default {
 						}
 					}
 					if (port == "-1") port = "80";
-					//console.log(address, port, addressid);
 
 					if (隧道版本作者.trim() === atob('Y21saXU=') && 获取代理IP.trim() === 'true') {
 						// 将addressid转换为小写
@@ -1331,7 +1329,6 @@ export default {
 				}
 				if (port == "-1") port = "443";
 
-				//console.log(address, port, addressid);
 
 				if (隧道版本作者.trim() === atob('Y21saXU=') && 获取代理IP.trim() === 'true') {
 					// 将addressid转换为小写
